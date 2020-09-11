@@ -53,11 +53,11 @@ a {
     color: rgb(var(--primary-100));
     cursor: pointer;
     text-decoration: none;
-    transition: all .2s ease-out;
+    transition: background-color .2s ease-out, color .2s ease-out;
 }
 
 a:hover {
-    background: rgb(var(--primary-100));
+    background-color: rgb(var(--primary-100));
     color: rgb(var(--base));
     transition: none;
 }

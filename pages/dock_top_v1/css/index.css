@@ -74,7 +74,7 @@ body {
     position: absolute;
     max-width: calc(100% - 48px);
     flex-wrap: wrap;
-    top: -84px;
+    top: -150px;
     display: flex;
     transition: all 0.2s 1s;
     cursor: pointer;
@@ -95,7 +95,7 @@ body {
     display: flex;
     top: 0px;
     left: 50%;
-    transition: all 0.2s 1s;
+    transition: top 0.2s 1s;
     cursor: pointer;
     transform: translateX(-50%);
 }

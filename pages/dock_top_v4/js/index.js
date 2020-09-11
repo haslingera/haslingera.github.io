@@ -3,7 +3,7 @@ document.querySelector(".center-dock").classList.toggle("show-dock")
 
 document.addEventListener("keydown", e => {
     if (!combinationPressed && e.key === "d") {
-        document.querySelector(".center-dock").classList.toggle("show-dock")
+        toggleShow()
         combinationPressed = true;
     }
 });
@@ -13,9 +13,17 @@ document.addEventListener("keyup", e => {
 });
 
 document.querySelector('.header-icon').addEventListener('click', e => {
-    document.querySelector(".center-dock").classList.toggle("show-dock")
+    toggleShow()
 })
 
 document.querySelector('.center-dock').addEventListener('click', e => {
-    document.querySelector(".center-dock").classList.toggle("show-dock")
+    toggleShow()
 })
+
+function toggleShow() {
+    document.querySelector(".center-dock").classList.toggle("show-dock")
+    var menuicons = document.querySelectorAll('.menu-icon');
+    for (var i = 0; i < menuicons.length; i++) {
+        menuicons.item(i).classList.toggle("show-dock");
+    }
+}

@@ -34,6 +34,34 @@ body {
 
 .menu-icon {
     padding: 8px 8px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: none;
+}
+
+.one.show-dock {
+    transition: opacity 1s 0.1s, transform 0.2s 0.15s ease-out;
+}
+
+.two.show-dock {
+    transition: opacity 1s 0.15s, transform 0.2s 0.2s ease-out;
+}
+
+.three.show-dock {
+    transition: opacity 1s 0.2s, transform 0.2s 0.25s ease-out;
+}
+
+.four.show-dock {
+    transition: opacity 1s 0.25s, transform 0.2s 0.3s ease-out;
+}
+
+.five.show-dock {
+    transition: opacity 1s 0.3s, transform 0.2s 0.35s ease-out;
+}
+
+.menu-icon.show-dock {
+    transform: translateY(0px);
+    opacity: 1;
 }
 
 .menu-entry {
@@ -96,6 +124,8 @@ body {
 
 .show-dock .dock {
     opacity: 1;
+    box-shadow: 0px 0px 1px rgba(var(--shadow), 0.2), 0px 30px 40px rgba(var(--shadow), 0.1);
+    transition: opacity 0.2s, box-shadow 0.5s ease-out;
 }
 
 .dock {
@@ -108,23 +138,13 @@ body {
     justify-content: center;
     align-items: center;
     background: rgba(var(--base), 0.85);
-    box-shadow: 0px 0px 1px rgba(var(--shadow), 0.2), 0px 30px 40px rgba(var(--shadow), 0.1);
+    box-shadow: 0px 0px 1px rgba(var(--shadow), 0.2), 0px 0px 0px rgba(var(--shadow), 0);
     opacity: 0;
-    transition: opacity 0.2s;
-}
-
-.open {
-    opacity: 1;
-    transition: all 0.2s 0.2s;
+    transition: none;
 }
 
 .active {
     color: rgb(var(--base));
-}
-
-.header-container:hover .menu-indicator-container {
-    top: -40px;
-    transition: all 0.2s 0.2s;
 }
 
 .label-handle {
@@ -162,3 +182,4 @@ body {
     margin-left: 12px;
     color: rgb(var(--neutral-100))
 }
+
