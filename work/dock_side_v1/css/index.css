@@ -54,7 +54,7 @@ body {
 }
 
 .menu-entry:hover {
-    padding: 12px 38px;
+    transform: translateX(12px);
 }
 
 .active {
