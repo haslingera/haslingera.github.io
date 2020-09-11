@@ -1,0 +1,15 @@
+body {
+    font-family: 'Roboto';
+    background: rgb(var(--base));
+    margin: 0px;
+    width: calc(100vw - 48px);
+    max-width: 100%;
+    height: calc(100vh - 24px);
+    padding: 0px 24px 24px 24px;
+    color: rgb(var(--text));
+}
+
+a {
+    display: inline-block;
+    margin-bottom: 8px;
+}

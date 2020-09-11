@@ -6,6 +6,7 @@ body {
     max-width: 100%;
     height: calc(100vh - 24px);
     padding: 0px;
+    line-height: 20px;
     color: rgb(var(--text));
 }
 
@@ -23,12 +24,12 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    padding: 8px 12px;
-    cursor: pointer;
+    padding: 8px 0px;
+    cursor: default;
 }
 
 .menu-icon {
-    font-size: 32px;
+    font-size: 48px;
 }
 
 .menu-icon {
@@ -37,27 +38,15 @@ body {
 
 .menu-entry {
     position: relative;
-    margin: 8px;
+    margin: 12px;
     border-radius: 5px;
 }
 
-/*.menu-entry:before {
-    content:'';
-    width: 42px;
-    height: 42px;
-    position: absolute;
-    top:0px;
-    left:0px;
-    border: solid 0px rgba(var(--text), 0.1);
-    border-radius: 5px;
-    z-index: -1;
-}*/
-
 .menu-entry:hover:before {
-    content:'';
+    content: '';
     position: absolute;
-    width: 48px;
-    height: 48px;
+    width: 64px;
+    height: 64px;
     border: solid 3px rgba(var(--text), 0.1);
     top: -3px;
     left: -3px;
@@ -68,7 +57,7 @@ body {
 .menu-entry.active {
     position: relative;
     background: rgb(var(--primary-100));
-    box-shadow: 0px 4px 10px rgba(var(--primary-100), 0.4);
+    box-shadow: 0px 4px 20px rgba(var(--primary-100), 0.3);
 }
 
 .menu-icon:hover+.label {
@@ -90,18 +79,28 @@ body {
 }
 
 .center-dock {
-    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
     align-items: center;
     justify-content: center;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin-left: -9999px;
+}
+
+.show-dock {
+    margin-left: 0;
+}
+
+.show-dock .dock {
+    opacity: 1;
 }
 
 .dock {
     padding: 8px 8px;
-    position: absolute;
-    /*width: 100vw;
-    max-width: 100%;*/
     flex-wrap: wrap;
-    top: -80px;
     display: flex;
     transition: all 0.2s 1s;
     cursor: pointer;
@@ -111,37 +110,16 @@ body {
     background: rgba(var(--base), 0.85);
     box-shadow: 0px 0px 1px rgba(var(--shadow), 0.2), 0px 30px 40px rgba(var(--shadow), 0.1);
     opacity: 0;
+    transition: opacity 0.2s;
 }
 
-.header-container:hover .dock {
-    top: 24px;
+.open {
     opacity: 1;
     transition: all 0.2s 0.2s;
 }
 
 .active {
     color: rgb(var(--base));
-}
-
-.menu-indicator-container {
-    position: absolute;
-    display: flex;
-    top: 0px;
-    left: 50%;
-    transition: all 0.2s 1s;
-    cursor: pointer;
-    transform: translateX(-50%);
-}
-
-.menu-indicator {
-    width: 4px;
-    height: 4px;
-    background: rgb(var(--text));
-    margin: 16px 4px;
-}
-
-.menu-indicator.active {
-    background: rgb(var(--primary-100));
 }
 
 .header-container:hover .menu-indicator-container {
@@ -161,9 +139,26 @@ body {
 }
 
 .divider {
-    height: 32px;
+    height: 48px;
     width: 1px;
     background: rgba(var(--text), 0.1);
     /*background: linear-gradient(180deg, rgba(var(--text), 0) 0%, rgba(var(--text), 0.2) 50%, rgba(var(--text), 0.1) 100%);*/
     margin: 8px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-icon {
+    padding: 0px 8px;
+    cursor: pointer;
+    position: relative;
+    top: -1px;
+}
+
+.description {
+    margin-left: 12px;
+    color: rgb(var(--neutral-100))
 }

@@ -1,10 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 :root {
-    --text:21, 23, 27;
-    --base:250, 251, 251;
-
+    --text: 21, 23, 27;
+    --base: 250, 251, 251;
+    --vanta: 255, 255, 255;
+    --shadow: 0, 0, 0;
     --neutral-100: 108, 115, 135;
-    --primary-100:11, 85, 196;
-    --pink-100:204, 29, 127;
-    --turquoise-100:40, 120, 120;
-    --purple-100:145, 81, 181;
+    --primary-100: 11, 85, 196;
+    --pink-100: 204, 29, 127;
+    --turquoise-100: 40, 120, 120;
+    --purple-100: 145, 81, 181;
+}
+
+[data-theme="dark"] {
+    --text: 250, 251, 251;
+    --base: 17, 18, 22;
+    --vanta: 0, 0, 0;
+    --shadow: 255, 255, 255;
+    --neutral-100: 117, 124, 145;
+    --primary-100: 52, 129, 244;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28.83px;
+    line-height: 34px;
+    letter-spacing: 0.003em;
+    color: rgb(var(--text));
+}
+
+h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25.63px;
+    line-height: 30px;
+    letter-spacing: 0.007em;
+    color: rgb(var(--text));
+}
+
+a {
+    color: rgb(var(--primary-100));
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .2s ease-out;
+}
+
+a:hover {
+    background: rgb(var(--primary-100));
+    color: rgb(var(--base));
+    transition: none;
 }
