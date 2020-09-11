@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto';
+    background: rgb(var(--base));
+    margin: 0px;
+    width: 100vw;
+    max-width: 100%;
+    height: calc(100vh - 24px);
+    padding: 0px;
+    color: rgb(var(--text));
+}
+
+.header-container {
+    position: sticky;
+    top: 0px;
+    background: rgba(var(--base), 1);
+}
+
+.content {
+    padding: 0px 12px;
+}
+
+.header {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.header-container:hover .dock {
+    top: 24px;
+    opacity: 1;
+    transition: all 0.2s 0.2s;
+}
+
+.menu-icon {
+    font-size: 32px;
+}
+
+.menu-icon {
+    padding: 6px 12px;
+}
+
+.menu-entry {
+    position: relative;
+}
+
+.menu-icon:hover+.label {
+    opacity: 1;
+    display: block;
+}
+
+.label {
+    position: absolute;
+    background: rgb(var(--text));
+    padding: 4px 8px;
+    left: 50%;
+    top: calc(100% + 24px);
+    transform: translateX(-50%);
+    color: rgb(var(--base));
+    opacity: 0;
+    display: none;
+    font-size: 14px;
+}
+
+.center-dock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dock {
+    padding: 10px 12px;
+    position: absolute;
+    max-width: calc(100% - 48px);
+    flex-wrap: wrap;
+    top: -84px;
+    display: flex;
+    transition: all 0.2s 1s;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    justify-content: flex-start;
+    background: rgba(var(--base), 0.8);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2), 0px 30px 40px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+}
+
+.active {
+    color: rgb(var(--primary-100));
+    text-shadow: 0px 4px 20px rgba(var(--primary-100), 0.4);
+}
+
+.menu-indicator-container {
+    position: absolute;
+    display: flex;
+    top: 0px;
+    left: 50%;
+    transition: all 0.2s 1s;
+    cursor: pointer;
+    transform: translateX(-50%);
+}
+
+.menu-indicator {
+    width: 4px;
+    height: 4px;
+    background: rgb(var(--text));
+    margin: 16px 4px;
+}
+
+.menu-indicator.active {
+    background: rgb(var(--primary-100));
+}
+
+.header-container:hover .menu-indicator-container {
+    top: -40px;
+    transition: all 0.2s 0.2s;
+}
+
+.label-handle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: -4px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    background: rgb(var(--text));
+    z-index: -1;
+}
