@@ -27,18 +27,27 @@ body {
     cursor: pointer;
 }
 
-.header-container:hover .dock {
-    top: 24px;
+.show-dock .dock {
+    transform: translateY(24px);
     opacity: 1;
-    transition: all 0.2s 0.2s;
+    transition: all 0.2s;
 }
 
 .menu-icon {
     font-size: 32px;
+    padding: 6px 12px;
 }
 
-.menu-icon {
-    padding: 6px 12px;
+.animate {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0s 0.2s, transform 0s 0.2s;
+}
+
+.show-dock .animate {
+    transform: translateY(0px);
+    opacity: 1;
+    transition: opacity 1s var(--delay1) ease-out, transform 0.2s var(--delay2) ease-out;
 }
 
 .menu-entry {
@@ -74,9 +83,9 @@ body {
     position: absolute;
     max-width: calc(100% - 48px);
     flex-wrap: wrap;
-    top: -150px;
+    transform: translateY(-150px);
     display: flex;
-    transition: all 0.2s 1s;
+    transition: all 0.2s;
     cursor: pointer;
     backdrop-filter: blur(10px);
     justify-content: flex-start;
@@ -90,9 +99,9 @@ body {
     display: flex;
     top: 0px;
     left: 50%;
-    transition: top 0.2s 1s;
+    transition: transform 0.2s;
     cursor: pointer;
-    transform: translateX(-50%);
+    transform: translate(-50%, 0px);
 }
 
 .menu-indicator {
@@ -106,9 +115,9 @@ body {
     background: rgb(var(--primary-100));
 }
 
-.header-container:hover .menu-indicator-container {
-    top: -40px;
-    transition: all 0.2s 0.2s;
+.show-dock .menu-indicator-container {
+    transform: translate(-50%, -40px);
+    transition: transform 0.2s;
 }
 
 .label-handle {

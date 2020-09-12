@@ -13,7 +13,7 @@ body {
     width: 274px;
     height: 100%;
     position: absolute;
-    left: calc(-250px);
+    left: -250px;
     top: 0px;
     display: flex;
     justify-content: center;

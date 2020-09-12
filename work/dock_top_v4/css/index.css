@@ -34,32 +34,16 @@ body {
 
 .menu-icon {
     padding: 8px 8px;
+}
+
+.animate {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(0px);
     transition: none;
 }
 
-.one.show-dock {
-    transition: opacity 1s 0.1s, transform 0.2s 0.15s ease-out;
-}
-
-.two.show-dock {
-    transition: opacity 1s 0.15s, transform 0.2s 0.2s ease-out;
-}
-
-.three.show-dock {
-    transition: opacity 1s 0.2s, transform 0.2s 0.25s ease-out;
-}
-
-.four.show-dock {
-    transition: opacity 1s 0.25s, transform 0.2s 0.3s ease-out;
-}
-
-.five.show-dock {
-    transition: opacity 1s 0.3s, transform 0.2s 0.35s ease-out;
-}
-
-.menu-icon.show-dock {
+.show-dock .animate {
+    transition: opacity 1s, transform 0.2s ease-out;
     transform: translateY(0px);
     opacity: 1;
 }

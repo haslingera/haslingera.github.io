@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="header-container">
+    <div class="header-container" onmouseenter="enter(this)" onmouseleave="leave(this)">
         <div class="header">Hub</div>
         <div class="menu-indicator-container">
             <div class="menu-indicator active"></div>
@@ -22,37 +22,37 @@
         <div class="center-dock">
             <div class="dock">
                 <div class="menu-entry">
-                    <i class="material-icons menu-icon active">amp_stories</i>
+                    <i class="material-icons menu-icon active animate">amp_stories</i>
                     <div class="label">
                         <div class="label-handle"></div>Hub
                     </div>
                 </div>
                 <div class="menu-entry">
-                    <i class="material-icons menu-icon">explore</i>
+                    <i class="material-icons menu-icon animate">explore</i>
                     <div class="label">
                         <div class="label-handle"></div>Explorer
                     </div>
                 </div>
                 <div class="menu-entry">
-                    <i class="material-icons menu-icon">notifications</i>
+                    <i class="material-icons menu-icon animate">notifications</i>
                     <div class="label">
                         <div class="label-handle"></div>Notifications
                     </div>
                 </div>
                 <div class="menu-entry">
-                    <i class="material-icons menu-icon">donut_small</i>
+                    <i class="material-icons menu-icon animate">donut_small</i>
                     <div class="label">
                         <div class="label-handle"></div>Correlate
                     </div>
                 </div>
                 <div class="menu-entry">
-                    <i class="material-icons menu-icon">dashboard</i>
+                    <i class="material-icons menu-icon animate">dashboard</i>
                     <div class="label">
                         <div class="label-handle"></div>Dashboards
                     </div>
                 </div>
                 <div class="menu-entry">
-                    <i class="material-icons menu-icon">invert_colors</i>
+                    <i class="material-icons menu-icon animate">invert_colors</i>
                     <div class="label">
                         <div class="label-handle"></div>Dark&nbspMode
                     </div>
@@ -60,6 +60,7 @@
             </div>
         </div>
     </div>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
