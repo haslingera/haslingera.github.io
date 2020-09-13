@@ -29,6 +29,16 @@
     user-select: none;
 }
 
+body {
+    font-family: 'Roboto';
+    background: rgb(var(--base));
+    margin: 0px;
+    padding: 0px;
+    line-height: 20px;
+    color: rgb(var(--text));
+}
+
+
 h2 {
     font-family: 'Roboto';
     font-style: normal;

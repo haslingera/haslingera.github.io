@@ -1,52 +1,22 @@
-
 body {
     width: 100vw;
     max-width: 100%;
     height: calc(100vh - 24px);
 }
 
-.header-container {
-    position: sticky;
-    top: 0px;
-    background: rgba(var(--base), 1);
-}
-
-.content {
-    padding: 0px 12px;
-}
-
-.header {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    padding: 8px 0px;
-    cursor: default;
-}
-
 .menu-icon {
     font-size: 48px;
-}
-
-.menu-icon {
     padding: 8px 8px;
-}
-
-.animate {
-    opacity: 0;
-    transform: translateY(0px);
-    transition: none;
-}
-
-.show-dock .animate {
-    transition: opacity 1s, transform 0.2s ease-out;
-    transform: translateY(0px);
-    opacity: 1;
 }
 
 .menu-entry {
     position: relative;
     margin: 12px;
     border-radius: 5px;
+}
+
+.hide {
+    opacity: 0;
 }
 
 .menu-entry:hover:before {
@@ -61,10 +31,11 @@ body {
     z-index: -1;
 }
 
-.menu-entry.active {
+.active {
     position: relative;
     background: rgb(var(--primary-100));
     box-shadow: 0px 4px 20px rgba(var(--primary-100), 0.3);
+    color: rgb(var(--base));
 }
 
 .menu-icon:hover+.label {
@@ -94,17 +65,6 @@ body {
     display: flex;
     width: 100vw;
     height: 100vh;
-    margin-left: -9999px;
-}
-
-.show-dock {
-    margin-left: 0;
-}
-
-.show-dock .dock {
-    opacity: 1;
-    box-shadow: 0px 0px 1px rgba(var(--shadow), 0.2), 0px 30px 40px rgba(var(--shadow), 0.1);
-    transition: opacity 0.2s, box-shadow 0.5s ease-out;
 }
 
 .dock {
@@ -117,13 +77,8 @@ body {
     justify-content: center;
     align-items: center;
     background: rgba(var(--base), 0.85);
-    box-shadow: 0px 0px 1px rgba(var(--shadow), 0.2), 0px 0px 0px rgba(var(--shadow), 0);
-    opacity: 0;
-    transition: none;
-}
-
-.active {
-    color: rgb(var(--base));
+    opacity: 1;
+    box-shadow: 0px 0px 1px rgba(var(--shadow), 0.2), 0px 30px 40px rgba(var(--shadow), 0.1);
 }
 
 .label-handle {
@@ -143,22 +98,5 @@ body {
     background: rgba(var(--text), 0.1);
     /*background: linear-gradient(180deg, rgba(var(--text), 0) 0%, rgba(var(--text), 0.2) 50%, rgba(var(--text), 0.1) 100%);*/
     margin: 8px;
-}
-
-.header-container {
-    display: flex;
-    align-items: center;
-}
-
-.header-icon {
-    padding: 0px 8px;
-    cursor: pointer;
-    position: relative;
-    top: -1px;
-}
-
-.description {
-    margin-left: 12px;
-    color: rgb(var(--neutral-100))
 }
 
