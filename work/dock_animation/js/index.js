@@ -33,6 +33,7 @@ function toggleShow() {
 
 let menuentries = document.querySelectorAll('.menu-entry');
 var clone;
+var currentEntry;
 
 var pressedX;
 var pressedY;
