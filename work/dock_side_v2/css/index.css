@@ -138,7 +138,7 @@ h1 {
   content:'';
   width: 54px;
   height: 54px;
-  background: rgba(var(--text), 0.1);
+  background: rgba(var(--text), var(--hover-frame-opacity));
   position: absolute;
   top:-3px;
   left:-3px;

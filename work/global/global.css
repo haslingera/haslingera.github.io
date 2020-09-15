@@ -21,6 +21,10 @@
     --shadow-opacity-none: 0;
     --shadow-opacity-border: 0.1;
     --shadow-opacity-color: 0.4; 
+
+    /*HOVER*/
+
+    --hover-frame-opacity: 0.1;
 }
 
 [data-theme="dark"] {
@@ -42,6 +46,10 @@
     --shadow-opacity-none: 0;
     --shadow-opacity-border: 0.1;
     --shadow-opacity-color: 1; 
+
+    /*HOVER*/
+
+    --hover-frame-opacity: 0.2;
 }
 
 .noselect {
