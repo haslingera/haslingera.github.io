@@ -131,7 +131,7 @@ h1 {
 .active .app {
   background: rgb(var(--primary-100));
   color: rgb(var(--base));
-  box-shadow: 0px 4px 10px rgba(var(--primary-100), 0.4);
+  box-shadow: 0px 4px 10px rgba(var(--shadow-color), var(--shadow-opacity-color));
 }
 
 .menu-entry:hover .app:before {

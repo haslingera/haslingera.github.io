@@ -3,21 +3,45 @@
     --text: 21, 23, 27;
     --base: 250, 251, 251;
     --vanta: 255, 255, 255;
-    --shadow: 0, 0, 0;
+    --icon: 250, 251, 251;
+
     --neutral-100: 108, 115, 135;
     --primary-100: 11, 85, 196;
     --pink-100: 204, 29, 127;
     --turquoise-100: 40, 120, 120;
     --purple-100: 145, 81, 181;
+
+    /*SHADOW*/
+
+    --shadow: 0, 0, 0;
+    --shadow-color: var(--primary-100);
+    --shadow-border: 0, 0, 0;
+
+    --shadow-opacity-dock: 0.1;
+    --shadow-opacity-none: 0;
+    --shadow-opacity-border: 0.1;
+    --shadow-opacity-color: 0.4; 
 }
 
 [data-theme="dark"] {
     --text: 250, 251, 251;
     --base: 17, 18, 22;
     --vanta: 0, 0, 0;
-    --shadow: 255, 255, 255;
+    --icon: 17, 18, 22;
+
     --neutral-100: 117, 124, 145;
     --primary-100: 52, 129, 244;
+
+    /*SHADOW*/
+
+    --shadow: 0, 0, 0;
+    --shadow-color: var(--shadow);
+    --shadow-border: 255, 255, 255;
+
+    --shadow-opacity-dock: 1;
+    --shadow-opacity-none: 0;
+    --shadow-opacity-border: 0.1;
+    --shadow-opacity-color: 1; 
 }
 
 .noselect {

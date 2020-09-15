@@ -78,7 +78,7 @@ body {
 .menu-entry.active {
     position: relative;
     background: rgb(var(--primary-100));
-    box-shadow: 0px 4px 10px rgba(var(--primary-100), 0.4);
+    box-shadow: 0px 4px 10px rgba(var(--shadow-color), var(--shadow-opacity-color));
 }
 
 .menu-icon:hover+.label {
@@ -118,12 +118,17 @@ body {
     justify-content: center;
     align-items: center;
     background: rgba(var(--base), 0.85);
-    box-shadow: 0px 0px 1px rgba(var(--shadow), 0), 0px 30px 40px rgba(var(--shadow), 0.1);
+    box-shadow: 0px 0px 1px rgba(var(--shadow-border), var(--shadow-opacity-none)), 0px 30px 40px rgba(var(--shadow), var(--shadow-opacity-dock));
+
+    border: 1px solid;
+    border-image-source: linear-gradient(0deg, rgba(var(--shadow-border), var(--shadow-opacity-border)), rgba(var(--shadow-border), var(--shadow-opacity-none)));
+    border-image-slice: 1;
+
     opacity: 0;
 }
 
 .active {
-    color: rgb(var(--base));
+    color: rgb(var(--icon));
 }
 
 .menu-indicator-container {

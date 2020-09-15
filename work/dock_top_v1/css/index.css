@@ -85,13 +85,18 @@ body {
     backdrop-filter: blur(10px);
     justify-content: flex-start;
     background: rgba(var(--base), 0.8);
-    box-shadow: 0px 0px 1px rgba(var(--shadow), 0), 0px 30px 40px rgba(var(--shadow), 0.1);
+    box-shadow: 0px 0px 1px rgba(var(--shadow-border), var(--shadow-opacity-none)), 0px 30px 40px rgba(var(--shadow), var(--shadow-opacity-dock));
+
+    border: 1px solid;
+    border-image-source: linear-gradient(0deg, rgba(var(--shadow-border), var(--shadow-opacity-border)), rgba(var(--shadow-border), var(--shadow-opacity-none)));
+    border-image-slice: 1;
+
     opacity: 0;
 }
 
 .active {
     color: rgb(var(--primary-100));
-    text-shadow: 0px 4px 20px rgba(var(--primary-100), 0.4);
+    text-shadow: 0px 4px 20px rgba(var(--shadow-color), var(--shadow-opacity-color));
 }
 
 .menu-indicator-container {

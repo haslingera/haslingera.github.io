@@ -1,7 +1,7 @@
 var combinationPressed = false;
 var increment = 0.05;
 
-document.querySelector(".center-dock").classList.toggle("show-dock")
+document.querySelector(".center-dock").classList.toggle("show-dock");
 
 document.addEventListener("keydown", e => {
     if (!combinationPressed && e.key === "d") {
@@ -19,6 +19,7 @@ document.querySelector('.header-icon').addEventListener('click', e => {
 })
 
 document.querySelector('.center-dock').addEventListener('click', e => {
+    if(e.target !== e.currentTarget) return;
     toggleShow()
 })
 
