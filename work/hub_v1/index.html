@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hub V1</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../global/global.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
+    <link href="./css/hub.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header-container">
+        <div class="header">Hub</div>
+        <div class="menu-indicator-container">
+            <div class="menu-indicator active"></div>
+            <div class="menu-indicator"></div>
+            <div class="menu-indicator"></div>
+            <div class="menu-indicator"></div>
+            <div class="menu-indicator"></div>
+            <div class="menu-indicator"></div>
+        </div>
+        <div class="close-hub noselect"><div class="close-label">Press 'esc' to cancel</div><i class="material-icons">close</i></div>
+        <div class="center-dock">
+            <div class="dock noselect">
+                <div class="menu-entry">
+                    <i class="material-icons menu-icon active animate">amp_stories</i>
+                    <div class="label">
+                        <div class="label-handle"></div>Hub
+                    </div>
+                </div>
+                <div class="menu-entry">
+                    <i class="material-icons menu-icon animate">explore</i>
+                    <div class="label">
+                        <div class="label-handle"></div>Explorer
+                    </div>
+                </div>
+                <div class="menu-entry">
+                    <i class="material-icons menu-icon animate">notifications</i>
+                    <div class="label">
+                        <div class="label-handle"></div>Notifications
+                    </div>
+                </div>
+                <div class="menu-entry">
+                    <i class="material-icons menu-icon animate">donut_small</i>
+                    <div class="label">
+                        <div class="label-handle"></div>Correlate
+                    </div>
+                </div>
+                <div class="menu-entry">
+                    <i class="material-icons menu-icon animate">dashboard</i>
+                    <div class="label">
+                        <div class="label-handle"></div>Dashboards
+                    </div>
+                </div>
+                <div class="menu-entry switch-theme">
+                    <i class="material-icons menu-icon animate">invert_colors</i>
+                    <div class="label">
+                        <div class="label-handle"></div>Switch&nbspTheme
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="app-container">
+        <h2 class="welcome-message">Welcome back. What do you need help with?</h2>
+        <div class=search-container>
+            <i class="material-icons header-icon search-icon noselect invisible">keyboard_backspace</i>
+            <input type="text" id="fname" name="fname" class="search-input" placeholder="Type to search..." autofocus>
+        </div>
+        
+        <div class="filter-container">
+            <div class="filter-block filters" style="flex-grow: 1;">
+                <div class="filter-header">
+                    <i class="material-icons header-icon">fast_forward</i>
+                    <h2>Quick filters</h2>
+                </div>
+                <div class="filter-label">Set quick filters to search within a specific category</div>
+                <div class="filter noselect">
+                    <div class="filter-name">All Apps</div>
+                    <div class="filter-apply">
+                        <i class="material-icons filter-apply-icon">arrow_right_alt</i>
+                        <div class="filter-apply-label">Apply filter</div>
+                    </div>
+                </div>
+
+                <div class="filter noselect">
+                    <div class="filter-name">Metric</div>
+                    <div class="filter-apply">
+                        <i class="material-icons filter-apply-icon">arrow_right_alt</i>
+                        <div class="filter-apply-label">Apply filter</div>
+                    </div>
+                </div>
+
+                <div class="filter noselect">
+                    <div class="filter-name">Documentation</div>
+                    <div class="filter-apply">
+                        <i class="material-icons filter-apply-icon">arrow_right_alt</i>
+                        <div class="filter-apply-label">Apply filter</div>
+                    </div>
+                </div>
+
+                <div class="filter noselect">
+                    <div class="filter-name">Dashboard</div>
+                    <div class="filter-apply">
+                        <i class="material-icons filter-apply-icon">arrow_right_alt</i>
+                        <div class="filter-apply-label">Apply filter</div>
+                    </div>
+                </div>
+
+                <div class="filter noselect">
+                    <div class="filter-name">User</div>
+                    <div class="filter-apply">
+                        <i class="material-icons filter-apply-icon">arrow_right_alt</i>
+                        <div class="filter-apply-label">Apply filter</div>
+                    </div>
+                </div>
+
+                <div class="filter noselect">
+                    <div class="filter-name">Problem</div>
+                    <div class="filter-apply">
+                        <i class="material-icons filter-apply-icon">arrow_right_alt</i>
+                        <div class="filter-apply-label">Apply filter</div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-block recents" style="flex-grow: 3;">
+                <div class="filter-header">
+                    <i class="material-icons header-icon">watch_later</i>
+                    <h2>Recent searches</h2>
+                </div>
+                <div class="filter-label">Use recents to navigate quickly to previous search results</div>
+                <a onclick="fillInput(this)">disk used %</a>
+                <a onclick="fillInput(this)">query syntax</a>
+                <a onclick="fillInput(this)">devops dashboard</a>
+                <a onclick="fillInput(this)">host 159se984</a>
+                <a onclick="fillInput(this)">documentation</a>
+            </div>
+            <div class="filter-block search hidden" style="flex-grow: 1;">
+                <div class="filter-header">
+                    <i class="material-icons header-icon">search</i>
+                    <h2 class="search-results-header">Search results</h2>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="../global/global.js"></script>
+</body>
+
+</html>
