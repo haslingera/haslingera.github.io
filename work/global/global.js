@@ -1,7 +1,6 @@
 let darkTheme = false;
 
 document.querySelector('.switch-theme').addEventListener('click', e => {
-    console.log('hi')
     if (darkTheme) {
         document.body.removeAttribute('data-theme');
         darkTheme=false;
