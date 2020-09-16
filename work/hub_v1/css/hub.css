@@ -28,7 +28,7 @@
     padding-top: calc(54px + 32px);
     margin-top: 0px;
     margin-bottom: 0px;
-    transition: all 0.2s;
+    transition: transform 0.2s, opacity 0.2s;
 }
 
 .search-input {
@@ -68,6 +68,16 @@
     position: relative;
     left: -42px;
 }
+
+.filter-header.search {
+    animation-name: up;
+    animation-duration: 0.2s;
+}
+
+@keyframes up {
+    0%   {transform: translateY(40px);}
+    100% {transform: translateY(0px);}
+  }
 
 .filter-header h2 {
     margin: 0px;
@@ -182,18 +192,13 @@ textarea:focus, input:focus{
     transition: transform 0.2s;
 }
 
-.search {
-    max-width: 100%;
-    transform: translateY(0px);
-}
-
 .searched {
     -webkit-transform: translateY(-40px);
     -moz-transform: translateY(-40px);
     -ms-transform: translateY(-40px);
     -o-transform: translateY(-40px);
     transform: translateY(-40px);
-    margin-bottom: 48px;
+    margin-bottom: 0px;
 }
 
 .search-icon {
