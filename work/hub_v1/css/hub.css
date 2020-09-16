@@ -184,9 +184,7 @@ textarea:focus, input:focus{
 
 .search {
     max-width: 100%;
-    overflow: hidden;
     transform: translateY(0px);
-    text-overflow: ellipsis;
 }
 
 .searched {
