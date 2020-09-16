@@ -31,6 +31,7 @@ let searchHeader = document.querySelector('.search-results-header');
 let searchIcon = document.querySelector('.search-icon');
 let input = document.querySelector('.search-input');
 let welcomeMessage = document.querySelector('.welcome-message');
+let searchContainer = document.querySelector('.search-container');
 
 input.addEventListener('input', e => {
     checkInput();
@@ -52,15 +53,17 @@ function checkInput () {
     if (value == '') {
         recents.classList.remove('hidden');
         filters.classList.remove('hidden');
+        welcomeMessage.classList.remove('no-welcome');
+        searchContainer.classList.remove('searched');
         search.classList.add('hidden');
         searchIcon.classList.add('invisible');
-        welcomeMessage.classList.remove('invisible');
     } else {
         recents.classList.add('hidden');
         filters.classList.add('hidden');
+        welcomeMessage.classList.add('no-welcome');
+        searchContainer.classList.add('searched');
         search.classList.remove('hidden');
         searchIcon.classList.remove('invisible');
-        welcomeMessage.classList.add('invisible');
         searchHeader.innerHTML = `${randomSearchResult.toLocaleString()} search results for '${value.trim()}'`        
     }
 }

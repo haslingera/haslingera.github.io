@@ -27,7 +27,8 @@
 .welcome-message {
     padding-top: calc(54px + 32px);
     margin-top: 0px;
-    margin-bottom: 48px;
+    margin-bottom: 0px;
+    transition: all 0.2s;
 }
 
 .search-input {
@@ -175,9 +176,11 @@ textarea:focus, input:focus{
 .search-container {
     display: flex;
     align-items: center;
-    margin-bottom: 160px;
     position: relative;
+    margin-top: 48px;
+    margin-bottom: 160px;
     left: -42px;
+    transition: margin 0.2s;
 }
 
 .search-icon {
@@ -202,4 +205,24 @@ textarea:focus, input:focus{
         left: 0px;
     }
    
+}
+
+.searched {
+    margin-top: -40px;
+    margin-bottom: 48px;
+}
+
+.no-welcome {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    -o-transform: translateY(-50px);
+    transform: translateY(-50px);
+}
+
+.search-results {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(var(--neutral-90))
 }
