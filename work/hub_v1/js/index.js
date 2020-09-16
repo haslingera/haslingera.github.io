@@ -42,7 +42,7 @@ searchIcon.addEventListener('click', e => {
     checkInput();
 })
 
-document.onkeypress= function (e){
+document.onkeydown= function (e){
     input.focus();
 }
 

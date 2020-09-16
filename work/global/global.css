@@ -68,7 +68,7 @@
     --shadow-color: var(--shadow);
     --shadow-border: 255, 255, 255;
 
-    --shadow-opacity-dock: 1;
+    --shadow-opacity-dock: 0.8;
     --shadow-opacity-none: 0;
     --shadow-opacity-border: 0.1;
     --shadow-opacity-color: 1; 
