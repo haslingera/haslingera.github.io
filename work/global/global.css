@@ -12,11 +12,11 @@
     --neutral-50: 243, 244, 245;
 
 
-    --primary-100: var(--turquoise-100);
-    --primary-70: var(--turquoise-70);
+    /*--primary-100: var(--turquoise-100);
+    --primary-70: var(--turquoise-70);*/
 
-    /*--primary-100: 11, 85, 196;
-    --primary-70: 153, 192, 250;*/
+    --primary-100: 11, 85, 196;
+    --primary-70: 153, 192, 250;
     --pink-100: 204, 29, 127;
     --pink-70: 246, 192, 222;
     --turquoise-100: 40, 120, 120;
@@ -51,11 +51,11 @@
     --neutral-60: 33, 36, 42;
     --neutral-50: 26, 28, 33;
 
-    --primary-100: var(--turquoise-100);
-    --primary-70: var(--turquoise-70);
+    /*--primary-100: var(--turquoise-100);
+    --primary-70: var(--turquoise-70);*/
 
-    /*--primary-100: 52, 129, 244;
-    --primary-70: 8, 66, 152;*/
+    --primary-100: 52, 129, 244;
+    --primary-70: 8, 66, 152;
     --pink-100: 225, 48, 147;
     --pink-70: 101, 14, 63;
     --turquoise-100: 60, 181, 181;
@@ -97,6 +97,7 @@ body {
     background: rgb(var(--base));
     margin: 0px;
     padding: 0px;
+    max-width: 100%;
     line-height: 20px;
     color: rgb(var(--text));
 }

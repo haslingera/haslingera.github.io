@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 .app-container {
     width: 80vw;
     max-width: 1920px;
@@ -57,7 +61,7 @@
 }
 
 .filter-block {
-    min-width: 200px;
+    /*min-width: 200px;*/
     margin: 0px 64px;
     margin-bottom: 64px;
 }
@@ -101,7 +105,6 @@
 .filter-name {
     font-size: 16px;
     line-height: 16px;
-
 }
 
 .filter-apply {
@@ -180,7 +183,16 @@ textarea:focus, input:focus{
     margin-top: 48px;
     margin-bottom: 160px;
     left: -42px;
-    transition: margin 0.2s;
+    transition: transform 0.2s;
+}
+
+.search {
+    transform: translateY(0px);
+}
+
+.searched {
+    transform: translateY(-40px);
+    margin-bottom: 48px;
 }
 
 .search-icon {
@@ -201,24 +213,26 @@ textarea:focus, input:focus{
         display: none;
     }
 
+    .search-icon {
+        display: block;
+    }
     .search-container {
         left: 0px;
+    }
+
+    .invisible {
+        display: none;
     }
    
 }
 
-.searched {
-    margin-top: -40px;
-    margin-bottom: 48px;
-}
-
 .no-welcome {
     opacity: 0;
-    -webkit-transform: translateY(-50px);
-    -moz-transform: translateY(-50px);
-    -ms-transform: translateY(-50px);
-    -o-transform: translateY(-50px);
-    transform: translateY(-50px);
+    -webkit-transform: translateY(-60px);
+    -moz-transform: translateY(-60px);
+    -ms-transform: translateY(-60px);
+    -o-transform: translateY(-60px);
+    transform: translateY(-60px);
 }
 
 .search-results {

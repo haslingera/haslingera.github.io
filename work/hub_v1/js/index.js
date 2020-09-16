@@ -70,6 +70,7 @@ function checkInput () {
 
 function fillInput (e) {
     input.value = e.innerHTML;
+    input.focus();
     checkInput ();
 }
 
