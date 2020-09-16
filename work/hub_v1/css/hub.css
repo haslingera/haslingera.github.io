@@ -183,7 +183,10 @@ textarea:focus, input:focus{
 }
 
 .search {
+    max-width: 100%;
+    overflow: hidden;
     transform: translateY(0px);
+    text-overflow: ellipsis;
 }
 
 .searched {
@@ -208,7 +211,7 @@ textarea:focus, input:focus{
 .search-results {
     font-size: 20px;
     font-weight: 400;
-    color: rgb(var(--neutral-90))
+    color: rgb(var(--neutral-90));
 }
 
 @media screen and (max-width: 931px) {
