@@ -30,7 +30,8 @@ body {
     -o-transform: translateY(24px);
     transform: translateY(24px);
     opacity: 1;
-    transition: all 0.2s;
+    will-change: transform, opacity;
+    transition: transform 0.2s, opacity 0.2s;
 }
 
 .menu-icon {
@@ -45,6 +46,7 @@ body {
     -ms-transform: translateY(-10px);
     -o-transform: translateY(-10px);
     transform: translateY(-10px);
+    will-change: transform, opacity;
     transition: opacity 0s 0.2s, transform 0s 0.2s;
 }
 
@@ -55,6 +57,7 @@ body {
     -o-transform: translateY(0px);
     transform: translateY(0px);
     opacity: 1;
+    will-change: transform, opacity;
     transition: opacity 1s var(--delay1) ease-out, transform 0.2s var(--delay2) ease-out;
 }
 
@@ -100,7 +103,8 @@ body {
     -o-transform: translateY(-150px);
     transform: translateY(-150px);
     display: flex;
-    transition: all 0.2s;
+    will-change: transform, opacity;
+    transition: transform 0.2s, opacity 0.2s;
     cursor: pointer;
     backdrop-filter: blur(10px);
     /*-webkit-backdrop-filter: blur(10px);*/
@@ -125,6 +129,7 @@ body {
     display: flex;
     top: 0px;
     left: 50%;
+    will-change: transform;
     transition: transform 0.2s;
     cursor: pointer;
     -webkit-transform: translate(-50%, 0px);
@@ -147,6 +152,7 @@ body {
 
 .show-dock .menu-indicator-container {
     transform: translate(-50%, -40px);
+    will-change: transform;
     transition: transform 0.2s;
 }
 

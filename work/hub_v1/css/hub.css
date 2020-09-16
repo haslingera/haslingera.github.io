@@ -28,6 +28,7 @@
     padding-top: calc(54px + 32px);
     margin-top: 0px;
     margin-bottom: 0px;
+    will-change: transform, opacity;
     transition: transform 0.2s, opacity 0.2s;
 }
 
@@ -105,6 +106,7 @@
     background: rgb(var(--neutral-60));
     margin: 16px 0px;
     cursor: pointer;
+    will-change: background-color, box-shadow;
     transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
 }
 
@@ -120,6 +122,7 @@
     -ms-transform: translateX(79px);
     -o-transform: translateX(79px);
     transform: translateX(79px);
+    will-change: transform;
     transition: transform 0.2s;
 }
 
@@ -189,6 +192,7 @@ textarea:focus, input:focus{
     margin-top: 48px;
     margin-bottom: 160px;
     left: -42px;
+    will-change: transform;
     transition: transform 0.2s;
 }
 
