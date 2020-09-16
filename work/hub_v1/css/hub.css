@@ -25,13 +25,13 @@
 }
 
 .welcome-message {
-    padding-top: calc(54px + 88px);
+    padding-top: calc(54px + 32px);
     margin-top: 0px;
     margin-bottom: 48px;
 }
 
 .search-input {
-    font-size: clamp(50px, 5vw, 80px);
+    font-size: clamp(30px, 5vw, 80px);
     width: 100%;
     padding: 0px;
     border: none;
@@ -52,12 +52,13 @@
 .filter-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 128px;
-    margin-bottom: 64px;
+    margin: 0px -64px;
 }
 
 .filter-block {
     min-width: 200px;
+    margin: 0px 64px;
+    margin-bottom: 64px;
 }
 
 .filter-header {
@@ -104,6 +105,10 @@
 
 .filter-apply {
     display: flex;
+    -webkit-transform: translateX(79px);
+    -moz-transform: translateX(79px);
+    -ms-transform: translateX(79px);
+    -o-transform: translateX(79px);
     transform: translateX(79px);
     transition: transform 0.2s;
 }
@@ -125,6 +130,10 @@
 
 .filter:hover .filter-apply {
     color: rgb(var(--primary-70));
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
     transform: translateX(0px);
 }
 

@@ -33,12 +33,20 @@ body {
 
 .animate {
     opacity: 0;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
     transform: translateY(0px);
     transition: none;
 }
 
 .show-dock .animate {
     transition: opacity 1s, transform 0.2s ease-out;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
     transform: translateY(0px);
     opacity: 1;
 }
@@ -78,6 +86,10 @@ body {
     padding: 4px 8px;
     left: 50%;
     top: calc(100% + 24px);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
     transform: translateX(-50%);
     color: rgb(var(--base));
     opacity: 0;
@@ -138,6 +150,10 @@ body {
     height: 8px;
     top: -4px;
     left: 50%;
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    -moz-transform: translateX(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) rotate(45deg);
+    -o-transform: translateX(-50%) rotate(45deg);
     transform: translateX(-50%) rotate(45deg);
     background: rgb(var(--text));
     z-index: -1;

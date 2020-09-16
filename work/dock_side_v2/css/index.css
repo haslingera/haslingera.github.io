@@ -50,6 +50,10 @@ body {
 }
 
 .menu-entry:hover {
+    -webkit-transform: translateX(8px);
+    -moz-transform: translateX(8px);
+    -ms-transform: translateX(8px);
+    -o-transform: translateX(8px);
     transform: translateX(8px);
 }
 
@@ -91,6 +95,10 @@ body {
     left: 0px;
     transition: all 0.2s;
     cursor: pointer;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
     transform: translateY(-50%);
 }
   

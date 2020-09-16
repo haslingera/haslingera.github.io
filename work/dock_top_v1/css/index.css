@@ -23,6 +23,10 @@ body {
 }
 
 .show-dock .dock {
+    -webkit-transform: translateY(24px);
+    -moz-transform: translateY(24px);
+    -ms-transform: translateY(24px);
+    -o-transform: translateY(24px);
     transform: translateY(24px);
     opacity: 1;
     transition: all 0.2s;
@@ -35,11 +39,19 @@ body {
 
 .animate {
     opacity: 0;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
     transform: translateY(-10px);
     transition: opacity 0s 0.2s, transform 0s 0.2s;
 }
 
 .show-dock .animate {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
     transform: translateY(0px);
     opacity: 1;
     transition: opacity 1s var(--delay1) ease-out, transform 0.2s var(--delay2) ease-out;
@@ -60,6 +72,10 @@ body {
     padding: 4px 8px;
     left: 50%;
     top: calc(100% + 24px);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
     transform: translateX(-50%);
     color: rgb(var(--base));
     opacity: 0;
@@ -78,6 +94,10 @@ body {
     position: absolute;
     max-width: calc(100% - 48px);
     flex-wrap: wrap;
+    -webkit-transform: translateY(-150px);
+    -moz-transform: translateY(-150px);
+    -ms-transform: translateY(-150px);
+    -o-transform: translateY(-150px);
     transform: translateY(-150px);
     display: flex;
     transition: all 0.2s;
@@ -107,6 +127,10 @@ body {
     left: 50%;
     transition: transform 0.2s;
     cursor: pointer;
+    -webkit-transform: translate(-50%, 0px);
+    -moz-transform: translate(-50%, 0px);
+    -ms-transform: translate(-50%, 0px);
+    -o-transform: translate(-50%, 0px);
     transform: translate(-50%, 0px);
 }
 
@@ -122,6 +146,10 @@ body {
 }
 
 .show-dock .menu-indicator-container {
+    -webkit-transform: translate(-50%, -40px);
+    -moz-transform: translate(-50%, -40px);
+    -ms-transform: translate(-50%, -40px);
+    -o-transform: translate(-50%, -40px);
     transform: translate(-50%, -40px);
     transition: transform 0.2s;
 }
@@ -132,6 +160,10 @@ body {
     height: 8px;
     top: -4px;
     left: 50%;
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    -moz-transform: translateX(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) rotate(45deg);
+    -o-transform: translateX(-50%) rotate(45deg);
     transform: translateX(-50%) rotate(45deg);
     background: rgb(var(--text));
     z-index: -1;
